@@ -1,0 +1,37 @@
+﻿customer:
+id - INT - PRIMARY - AUTO INC
+number - INT
+title - VARCHAR 30
+firstname - VARCHAR 100
+name - VARCHAR 100
+attn1 - VARCHAR 100
+attn2 - VARCHAR 100
+address - VARCHAR 100
+postalcode - VARCHAR 10
+city - VARCHAR 100
+addressextra - VARCHAR 100
+iban - VARCHAR 34
+fatno - VARCHAR 100
+reseller - BOOL
+payment - VARCHAR 100
+invoiceperiod - INT
+ccvcategory - INT
+phone - VARCHAR 100
+mobile - VARCHAR 100
+status - VARCHAR 100
+remarks - VARCHAR 255
+discountproducts - DOUBLE
+discountlabour - DOUBLE
+discount95 - DOUBLE
+discountdiesel - DOUBLE
+discount98 - DOUBLE
+
+ccvcards:
+id - INT - PRIMARY - AUTO INC
+number - INT
+pincode - INT
+mark - VARCHAR 6
+status - VARCHAR 255
+remark - VARCHAR 255
+expirerequest - VARCHAR 100
+

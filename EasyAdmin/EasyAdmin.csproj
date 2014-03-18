@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1332C736-4A2C-4399-AB04-5B0269B8FD94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyAdmin</RootNamespace>
+    <AssemblyName>EasyAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>admin.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Word\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCompleteTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoFillControlClass.cs" />
+    <Compile Include="CCVCardsTableClass.cs" />
+    <Compile Include="CreateAFIS12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateAFIS12.Designer.cs">
+      <DependentUpon>CreateAFIS12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAFIS12Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateAFIS12Header.Designer.cs">
+      <DependentUpon>CreateAFIS12Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAFIS12Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateAFIS12Line.Designer.cs">
+      <DependentUpon>CreateAFIS12Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomersPanel.Designer.cs">
+      <DependentUpon>CustomersPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTableClass.cs" />
+    <Compile Include="DataBaseClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseSettingsForm.Designer.cs">
+      <DependentUpon>DatabaseSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImportForm.Designer.cs">
+      <DependentUpon>DataImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBRecoverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBRecoverForm.Designer.cs">
+      <DependentUpon>DBRecoverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailForm.Designer.cs">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceBodyPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoiceBodyPanel.Designer.cs">
+      <DependentUpon>InvoiceBodyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceHeaderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoiceHeaderPanel.Designer.cs">
+      <DependentUpon>InvoiceHeaderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoicePanel.Designer.cs">
+      <DependentUpon>InvoicePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceProductItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoiceProductItem.Designer.cs">
+      <DependentUpon>InvoiceProductItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsTableClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendEmailPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendEmailPanel.Designer.cs">
+      <DependentUpon>SendEmailPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendEmailTableClass.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsClass.cs" />
+    <EmbeddedResource Include="CreateAFIS12.resx">
+      <DependentUpon>CreateAFIS12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAFIS12Header.resx">
+      <DependentUpon>CreateAFIS12Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAFIS12Line.resx">
+      <DependentUpon>CreateAFIS12Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersPanel.resx">
+      <DependentUpon>CustomersPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseSettingsForm.resx">
+      <DependentUpon>DatabaseSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImportForm.resx">
+      <DependentUpon>DataImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBRecoverForm.resx">
+      <DependentUpon>DBRecoverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailForm.resx">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceBodyPanel.resx">
+      <DependentUpon>InvoiceBodyPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceHeaderPanel.resx">
+      <DependentUpon>InvoiceHeaderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicePanel.resx">
+      <DependentUpon>InvoicePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceProductItem.resx">
+      <DependentUpon>InvoiceProductItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SendEmailPanel.resx">
+      <DependentUpon>SendEmailPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBaseClass\DataBaseData.csproj">
+      <Project>{ffe9e117-df1a-4264-bd9d-9a2a25b961e4}</Project>
+      <Name>DataBaseData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBMySQLConnection\DBMySQLConnection.csproj">
+      <Project>{8fbf99fb-e602-4946-9412-84970789b1ce}</Project>
+      <Name>DBMySQLConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.ico" />
+    <Content Include="velden.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

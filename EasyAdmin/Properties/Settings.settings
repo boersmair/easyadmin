@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EasyAdmin.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TemplateAFIS12" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TemplateInvoiceWord" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TemplateInvoiceWordReseller" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TemplateInvoiceWordDiscount" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaveDirAFIS12" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaveDirInvoice" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaveDirInvoiceReseller" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TemplateHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FATHigh" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">21.0</Value>
+    </Setting>
+    <Setting Name="FATLow" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">6.0</Value>
+    </Setting>
+    <Setting Name="MainFormWindowSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">1000, 1000</Value>
+    </Setting>
+    <Setting Name="MainFormWindowState" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="MainFormLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">30, 10</Value>
+    </Setting>
+    <Setting Name="PDFOutputInvoice" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DecimalsInvoiceAmount" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PDFOutputAFIS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InvoiceNoOffset" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="InvoiceAmountRemove0s" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EmailTimeout" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30000</Value>
+    </Setting>
+    <Setting Name="EmailFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vandeputbv@online.nl</Value>
+    </Setting>
+    <Setting Name="EmailSMTPServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.online.nl</Value>
+    </Setting>
+    <Setting Name="EmailSMTPPort" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="EmailSMTPSSL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EmailSMTPUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bitankbv@gmail.com</Value>
+    </Setting>
+    <Setting Name="EmailSMTPPassw" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailCCV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ccvkb@nl.ccv.eu</Value>
+    </Setting>
+    <Setting Name="SaveDirYearSubFolder" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

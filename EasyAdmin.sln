@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAdmin", "EasyAdmin\EasyAdmin.csproj", "{1332C736-4A2C-4399-AB04-5B0269B8FD94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMySQLConnection", "DBMySQLConnection\DBMySQLConnection.csproj", "{8FBF99FB-E602-4946-9412-84970789B1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseData", "DataBaseClass\DataBaseData.csproj", "{FFE9E117-DF1A-4264-BD9D-9A2A25B961E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1332C736-4A2C-4399-AB04-5B0269B8FD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1332C736-4A2C-4399-AB04-5B0269B8FD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1332C736-4A2C-4399-AB04-5B0269B8FD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1332C736-4A2C-4399-AB04-5B0269B8FD94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBF99FB-E602-4946-9412-84970789B1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBF99FB-E602-4946-9412-84970789B1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBF99FB-E602-4946-9412-84970789B1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBF99FB-E602-4946-9412-84970789B1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE9E117-DF1A-4264-BD9D-9A2A25B961E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE9E117-DF1A-4264-BD9D-9A2A25B961E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE9E117-DF1A-4264-BD9D-9A2A25B961E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE9E117-DF1A-4264-BD9D-9A2A25B961E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
