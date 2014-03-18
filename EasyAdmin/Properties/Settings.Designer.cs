@@ -346,5 +346,173 @@ namespace EasyAdmin.Properties {
                 this["SaveDirYearSubFolder"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool DB_UseWinAuth {
+            get {
+                return ((bool)(this["DB_UseWinAuth"]));
+            }
+            set {
+                this["DB_UseWinAuth"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3306")]
+        public decimal DB_Port {
+            get {
+                return ((decimal)(this["DB_Port"]));
+            }
+            set {
+                this["DB_Port"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("localhost")]
+        public string DB_Server {
+            get {
+                return ((string)(this["DB_Server"]));
+            }
+            set {
+                this["DB_Server"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("root")]
+        public string DB_Username {
+            get {
+                return ((string)(this["DB_Username"]));
+            }
+            set {
+                this["DB_Username"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DB_Psw {
+            get {
+                return ((string)(this["DB_Psw"]));
+            }
+            set {
+                this["DB_Psw"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("vdput")]
+        public string DB_Database {
+            get {
+                return ((string)(this["DB_Database"]));
+            }
+            set {
+                this["DB_Database"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("customers")]
+        public string DBTbl_customers {
+            get {
+                return ((string)(this["DBTbl_customers"]));
+            }
+            set {
+                this["DBTbl_customers"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ccvcards")]
+        public string DBTbl_ccvcards {
+            get {
+                return ((string)(this["DBTbl_ccvcards"]));
+            }
+            set {
+                this["DBTbl_ccvcards"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("invoices")]
+        public string DBTbl_invoices {
+            get {
+                return ((string)(this["DBTbl_invoices"]));
+            }
+            set {
+                this["DBTbl_invoices"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("products")]
+        public string DBTbl_products {
+            get {
+                return ((string)(this["DBTbl_products"]));
+            }
+            set {
+                this["DBTbl_products"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("afis12")]
+        public string DBTbl_afis12 {
+            get {
+                return ((string)(this["DBTbl_afis12"]));
+            }
+            set {
+                this["DBTbl_afis12"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("emailsend")]
+        public string DBTbl_emailsend {
+            get {
+                return ((string)(this["DBTbl_emailsend"]));
+            }
+            set {
+                this["DBTbl_emailsend"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("emailattachm")]
+        public string DBTbl_emailattch {
+            get {
+                return ((string)(this["DBTbl_emailattch"]));
+            }
+            set {
+                this["DBTbl_emailattch"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("MySql")]
+        public string DB_dbtype {
+            get {
+                return ((string)(this["DB_dbtype"]));
+            }
+            set {
+                this["DB_dbtype"] = value;
+            }
+        }
     }
 }

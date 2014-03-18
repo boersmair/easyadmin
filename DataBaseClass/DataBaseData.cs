@@ -14,7 +14,9 @@ namespace DataBaseData
     public class DataBaseSettings : ICloneable
     {
         public const string DB_MYSQL = "MySql";
+        public const string DB_MSSQL = "MSSql";
 
+        public bool usewinauth = true;
         public string databasetype = DB_MYSQL;
         public string server = "localhost";
         public int port = 3306;

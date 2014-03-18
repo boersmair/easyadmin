@@ -14,16 +14,42 @@ namespace EasyAdmin
     public partial class DatabaseSettingsForm : Form
     {
         public DataBaseSettings settings = new DataBaseSettings();
+        private List<SettingsForm.TextBoxText> TextBoxData = new List<SettingsForm.TextBoxText>();
+        private List<SettingsForm.NumericUDValue> NumericValue = new List<SettingsForm.NumericUDValue>();
+        private List<SettingsForm.CheckBoxCheckedS> CheckBValue = new List<SettingsForm.CheckBoxCheckedS>();
 
-        public DatabaseSettingsForm(DataBaseSettings dbsettings)
+
+        public DatabaseSettingsForm()
         {
             InitializeComponent();
             cbDatabaseType.Items.Clear();
             cbDatabaseType.Items.Add(DataBaseData.DataBaseSettings.DB_MYSQL);
-            UpdateSettings(dbsettings);
+            //cbDatabaseType.Items.Add(DataBaseData.DataBaseSettings.DB_MSSQL);
 
+            TextBoxData.Clear();
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbServer, tbServer.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbDatabase, tbDatabase.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbUsername, tbUsername.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbPassword, tbPassword.Text));
+
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbAFIS12TableName, tbAFIS12TableName.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbCCVcardTableName, tbCCVcardTableName.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbCustomerTableName, tbCustomerTableName.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbInvoiceTableName, tbInvoiceTableName.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbProductTableName, tbProductTableName.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbEmailSend, tbEmailSend.Text));
+            TextBoxData.Add(new SettingsForm.TextBoxText(tbEmailAttachm, tbEmailAttachm.Text));
+
+            NumericValue.Clear();
+            NumericValue.Add(new SettingsForm.NumericUDValue(nudPort, nudPort.Value));
+
+            CheckBValue.Clear();
+            CheckBValue.Add(new SettingsForm.CheckBoxCheckedS(cbUseWinAuth, cbUseWinAuth.Checked));
+
+
+            //UpdateSettings(dbsettings);
          }
-
+        /*
         public void UpdateSettings(DataBaseSettings dbsettings)
         {
             settings = (DataBaseSettings)settings.Clone();
@@ -46,7 +72,7 @@ namespace EasyAdmin
             tbEmailAttachm.Text = settings.emailattachm;
 
         }
-
+        */
         private void btnTestConnection_Click(object sender, EventArgs e)
         {
             ReadSettings();
@@ -59,7 +85,10 @@ namespace EasyAdmin
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            ReadSettings();
+            //ReadSettings();
+            //save settings
+            Properties.Settings.Default.Save();
+
         }
         private void ReadSettings()
         {
@@ -77,6 +106,17 @@ namespace EasyAdmin
             settings.producttable = tbProductTableName.Text;
             settings.emailsend = tbEmailSend.Text;
             settings.emailattachm = tbEmailAttachm.Text;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            //restore data
+            for (int i = 0; i < TextBoxData.Count; i++)
+                TextBoxData[i].Textbox.Text = TextBoxData[i].Text;
+            for (int i = 0; i < NumericValue.Count; i++)
+                NumericValue[i].NumericUD.Value = NumericValue[i].Value;
+            for (int i = 0; i < CheckBValue.Count; i++)
+                CheckBValue[i].CheckB.Checked = CheckBValue[i].CheckedSt;
         }
     }
 }

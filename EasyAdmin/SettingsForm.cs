@@ -12,7 +12,7 @@ namespace EasyAdmin
 {
     public partial class SettingsForm : Form
     {
-        class TextBoxText
+        public class TextBoxText
         {
             private string text;
             private TextBox textbox;
@@ -32,7 +32,7 @@ namespace EasyAdmin
                 get { return text; }
             }
         }
-        class NumericUDValue
+        public class NumericUDValue
         {
             private decimal value;
             private NumericUpDown numericupd;
@@ -52,7 +52,7 @@ namespace EasyAdmin
                 get { return value; }
             }
         }
-        class CheckBoxCheckedS
+        public class CheckBoxCheckedS
         {
             private bool checkedst;
             private CheckBox checkb;
@@ -97,6 +97,7 @@ namespace EasyAdmin
             TextBoxData.Add(new TextBoxText(tbEmailSMTPPassw, tbEmailSMTPPassw.Text));
             TextBoxData.Add(new TextBoxText(tbEmailCCV, tbEmailCCV.Text));
 
+            NumericValue.Clear();
             NumericValue.Add(new NumericUDValue(nUDFATHigh, nUDFATHigh.Value));
             NumericValue.Add(new NumericUDValue(nUDFATLow, nUDFATLow.Value));
             NumericValue.Add(new NumericUDValue(nUDDecimals, nUDDecimals.Value));
@@ -104,6 +105,7 @@ namespace EasyAdmin
             NumericValue.Add(new NumericUDValue(nUDEmailSMTPPort, nUDEmailSMTPPort.Value));
             NumericValue.Add(new NumericUDValue(nUDEmailTimeout, nUDEmailTimeout.Value));
 
+            CheckBValue.Clear();
             CheckBValue.Add(new CheckBoxCheckedS(cbAmountRemove0s, cbAmountRemove0s.Checked));
             CheckBValue.Add(new CheckBoxCheckedS(cbEmailSSL, cbEmailSSL.Checked));
             CheckBValue.Add(new CheckBoxCheckedS(cbStoreFolderYear, cbStoreFolderYear.Checked));

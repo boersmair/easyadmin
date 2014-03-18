@@ -36,19 +36,42 @@ namespace EasyAdmin
                     Properties.Settings.Default[propnames[i]] = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 }
             }
-            InitializeComponent();            
+            InitializeComponent();
+            InitDbSettings();
             DbUpdate(null);
             invoicePanel1.OnDBUpdated = DbUpdate;
             customersPanel.OnDBUpdated = DbUpdate;
             db.TestConnection();
         }
 
+        private void InitDbSettings()
+        {           
+            db.Settings.databasetype = Properties.Settings.Default.DB_dbtype;
+            //if (db.Settings.databasetype != DataBaseSettings.DB_MSSQL || db.Settings.databasetype != DataBaseSettings.DB_MYSQL)
+                db.Settings.databasetype = DataBaseSettings.DB_MYSQL;
+            db.Settings.port = (int)Properties.Settings.Default.DB_Port;
+            db.Settings.password = Properties.Settings.Default.DB_Psw;
+            db.Settings.username = Properties.Settings.Default.DB_Username;
+            db.Settings.usewinauth = Properties.Settings.Default.DB_UseWinAuth;
+
+            db.Settings.database = Properties.Settings.Default.DB_Database;
+
+            db.Settings.customertable = Properties.Settings.Default.DBTbl_customers;
+            db.Settings.ccvcardstable = Properties.Settings.Default.DBTbl_ccvcards;
+            db.Settings.AFIS12table = Properties.Settings.Default.DBTbl_afis12;
+            db.Settings.invoicetable = Properties.Settings.Default.DBTbl_invoices;
+            db.Settings.producttable = Properties.Settings.Default.DBTbl_products;
+            db.Settings.emailsend = Properties.Settings.Default.DBTbl_emailsend;
+            db.Settings.emailattachm = Properties.Settings.Default.DBTbl_emailattch;
+        }
+
         private void databaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DatabaseSettingsForm dbform = new DatabaseSettingsForm(db.Settings);
+            DatabaseSettingsForm dbform = new DatabaseSettingsForm();
             if (dbform.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                db.UpdateSettings((DataBaseSettings)dbform.settings.Clone());
+                InitDbSettings();
+                //db.UpdateSettings((DataBaseSettings)dbform.settings.Clone());
                 DbUpdate(null);
             }
         }

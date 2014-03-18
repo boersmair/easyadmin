@@ -83,5 +83,47 @@
     <Setting Name="SaveDirYearSubFolder" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="DB_UseWinAuth" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DB_Port" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="DB_Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="DB_Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="DB_Psw" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vdput</Value>
+    </Setting>
+    <Setting Name="DBTbl_customers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">customers</Value>
+    </Setting>
+    <Setting Name="DBTbl_ccvcards" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ccvcards</Value>
+    </Setting>
+    <Setting Name="DBTbl_invoices" Type="System.String" Scope="User">
+      <Value Profile="(Default)">invoices</Value>
+    </Setting>
+    <Setting Name="DBTbl_products" Type="System.String" Scope="User">
+      <Value Profile="(Default)">products</Value>
+    </Setting>
+    <Setting Name="DBTbl_afis12" Type="System.String" Scope="User">
+      <Value Profile="(Default)">afis12</Value>
+    </Setting>
+    <Setting Name="DBTbl_emailsend" Type="System.String" Scope="User">
+      <Value Profile="(Default)">emailsend</Value>
+    </Setting>
+    <Setting Name="DBTbl_emailattch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">emailattachm</Value>
+    </Setting>
+    <Setting Name="DB_dbtype" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MySql</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
